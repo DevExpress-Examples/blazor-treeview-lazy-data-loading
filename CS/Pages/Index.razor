@@ -1,0 +1,39 @@
+﻿@page "/"
+@using DataMappings.Data.Northwind
+@using DevExtreme.AspNet.Data
+@using DevExtreme.AspNet.Data.ResponseModel
+@using System.Threading
+@using System.Threading.Tasks
+@using System.Net.Http
+@using System.Text.Json
+@using Microsoft.EntityFrameworkCore
+
+@inject IDbContextFactory<NorthwindContext> DbFactory;
+
+
+<DxTreeView Data="@Data" LoadChildNodesOnDemand="true">
+    <DataMappings>
+        <DxTreeViewDataMapping Text="@(nameof(Category.CategoryName))"
+                               Children="@(nameof(Category.Products))"
+                               HasChildren="@(nameof(Category.HasProducts))" >
+        </DxTreeViewDataMapping>
+        <DxTreeViewDataMapping Level="1" Text="ProductName"/>
+    </DataMappings>
+</DxTreeView>
+
+@code {
+
+    List<Category> Data { get; set; }
+
+    NorthwindContext context;
+
+    protected override Task OnInitializedAsync() {
+
+        context = DbFactory.CreateDbContext();
+
+        Data = context.Categories.ToList();
+
+        return base.OnInitializedAsync();
+    }
+
+}
