@@ -1,3 +1,7 @@
+<!-- default badges list -->
+[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1194802)
+[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+<!-- default badges end -->
 # Tree View for Blazor - How to load child nodes on demand (lazy loading)
 
 This example binds our DevExpress Blazor [TreeView](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTreeView) to a data source and uses the [DxTreeViewDataMapping](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTreeViewDataMapping) component to load child nodes on demand.
