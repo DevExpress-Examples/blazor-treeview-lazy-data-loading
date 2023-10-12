@@ -24,7 +24,7 @@ This example binds our DevExpress Blazor [TreeView](https://docs.devexpress.com/
 
 2. Set the [DxTreeview.LoadChildNodesOnDemand](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTreeView.LoadChildNodesOnDemand) property to `true` to activate lazy data loading in `DxTreeView`.
 
-3. Add a [DxTreeViewDataMapping](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTreeViewDataMapping) component and use its [HasChildren](https://docs.devexpress.com/Blazor/DevExpress.Blazor.Base.DxTreeViewDataMappingBase.HasChildren) property to specify whether a node has child nodes before loading them from the data source.
+3. Add a [DxTreeViewDataMapping](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTreeViewDataMapping) component and use its [HasChildren](https://docs.devexpress.com/Blazor/DevExpress.Blazor.Base.DxTreeViewDataMappingBase.HasChildren) property to indicate whether a node has child nodes. If true, the node displays an expand glyph even if its children are not yet loaded from the data source. 
 
     ```razor
     <DxTreeView Data="@Data" LoadChildNodesOnDemand="true">
