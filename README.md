@@ -52,4 +52,4 @@ This example binds our DevExpress Blazor [TreeView](https://docs.devexpress.com/
 
 ## More Examples
 
-- [Grid for Blazor - How to bind the component to data with Entity Framework Core](https://github.com/DevExpress-Examples/blazor-dxgrid-bind-to-data-with-entity-framework-core)]
+- [Grid for Blazor - How to bind the component to data with Entity Framework Core](https://github.com/DevExpress-Examples/blazor-dxgrid-bind-to-data-with-entity-framework-core)
