@@ -8,7 +8,7 @@
 
 This example binds our DevExpress Blazor [TreeView](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTreeView) to a data source and uses the [DxTreeViewDataMapping](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTreeViewDataMapping) component to load child nodes on demand.
 
-![DxTreeView - Load child nodes on demand](LoadDataOnDemand.gif)
+![DxTreeView - Load child nodes on demand](LoadDataOnDemand.png)
 
 ## Implementation Steps
 
